@@ -1,4 +1,40 @@
-body
-{
-    background-color: #000;
+@import "libs/mini-reset.scss";
+
+body {
+    background: #ffffff;
 }
+
+p {
+    margin: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.container{
+    margin-top: 15px;
+    padding: 5px;
+
+    &__center {
+        @extend .container;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.column {
+    flex-direction: column;
+}
+
+.table {
+    width: 100%;
+
+    td {
+        border: solid 1px #cccccc;
+    }
+
+
+}
+
+
