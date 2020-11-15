@@ -6,6 +6,7 @@
     <title>OhMyFood!</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand:400,500,600,700,900' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/54c1824395.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,14 +19,14 @@
     <div id="localization" class="flex container__center">
         <form action="" method="get">
             <i class="fas fa-map-marker-alt"></i>
-            <input type="search" placeholder="Paris, Belleville"/>
+            <input class="field" type="search" placeholder="Paris, Belleville"/>
         </form>
     </div>
     <!-- Mode d'emploi -->
-    <section>
+    <section id="how_to">
         <div class="container txt__center">
             <h1>Réservez le menu qui vous convient</h1>
-            <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
+            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <button>
                     Explorez nos restaurants
             </button>
@@ -33,19 +34,19 @@
     </section>
     <!-- Selection -->
     <section>
-        <div class="flex__col container txt__center">
+        <div class="flex__col container txt__left">
             <h1 class="txt__left">
                 Fonctionnement
             </h1>
-            <ul>
-                <li>
-                    Choisissez un restaurant
+            <ul id="steps">
+                <li class="mini">
+                    <span><i class="fas fa-mobile-alt ico"></i>Choisissez un restaurant</span>
                 </li>
-                <li>
-                    Composez votre menu
+                <li class="mini">
+                    <span><i class="fas fa-list-ul ico"></i>Composez votre menu</span>
                 </li>
-                <li>
-                    Dégustez au restaurant
+                <li class="mini">
+                    <span><i class="fas fa-store ico"></i>Dégustez au restaurant</span>
                 </li>
             </ul>
         </div>
@@ -104,8 +105,8 @@
             </a>
         </div>
     </section>
-    <footer>
-        <div class="flex container__center txt__left">
+    <footer id="footer">
+        <div class="flex container txt__left">
             <ul>
                 <li>
                     <h2>ohmyfood</h2>
@@ -114,14 +115,14 @@
                     <a href="MISC/404.html"
                     title="Proposer un restaurant"
                     target="_self">
-                    Proposer un restaurant
+                    <span><i class="fas fa-utensils ico"></i>Proposer un restaurant</span>
                     </a>
                 </li>
                 <li>
                     <a href="MISC/404.html"
                     title="Devenir partenaire"
                     target="_self">
-                    Devenir partenaire
+                    <span><i class="fas fa-hands-helping ico"></i>Devenir partenaire</span>
                     </a>
                 </li>
                 <li>
