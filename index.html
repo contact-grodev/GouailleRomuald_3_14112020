@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OhMyFood!</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,600,700,900' rel='stylesheet' type='text/css'>
     <script src="https://kit.fontawesome.com/54c1824395.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -21,24 +21,22 @@
             <input type="search" placeholder="Paris, Belleville"/>
         </form>
     </div>
-    <section class="flex container__center">
-        <div class="column">
+    <!-- Mode d'emploi -->
+    <section>
+        <div class="container txt__center">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d'exception, séléctionnés par nos soins.</h2>
-            <div>
-                <button>
+            <button>
                     Explorez nos restaurants
-                </button>
-            </div>
+            </button>
         </div>
     </section>
+    <!-- Selection -->
     <section>
-        <div class="container__center">
-            <header>
-                <h1>
-                    Fonctionnement
-                </h1>
-            </header>
+        <div class="flex__col container txt__center">
+            <h1 class="txt__left">
+                Fonctionnement
+            </h1>
             <ul>
                 <li>
                     Choisissez un restaurant
@@ -52,41 +50,96 @@
             </ul>
         </div>
     </section>
-    <section class="container__center">
-        <h1>
+    <!-- Propositions -->
+    <section class="flex__col container txt__center">
+        <h1 class="txt__left">
             Restaurants
         </h1>
-        <div>
-            <img src="" alt="La palette du goût">
+        <div class="mini">
+            <a class="" href="MISC/404.html">
+                <img class="img"
+                src="./img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+                alt="La palette du goût" 
+                title="La palette du goût" />
+                <div class="desc txt__left">
+                <h2>La palette du goût</h2>
+                <p>Ménilmontant</p>
+                </div>
+            </a>
         </div>
-        <div>
-            <img src="" alt="La note enchantée">
+        <div class="mini">
+            <a class="" href="MISC/404.html">
+                <img class="img"
+                src="./img/stil-u2Lp8tXIcjw-unsplash.jpg" 
+                alt="La note enchantée" 
+                title="La note enchantée" />
+                <div class="desc txt__left">
+                <h2>La note enchantée</h2>
+                <p>Charonne</p>
+                </div>
+            </a>
         </div>
-        <div>
-            <img src="" alt="A la française">
+        <div class="mini">
+            <a class="" href="MISC/404.html">
+                <img class="img"
+                src="./img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" 
+                alt="A la française" 
+                title="A la française" />
+                <div class="desc txt__left">
+                <h2>A la française</h2>
+                <p>Cité Rouge</p>
+                </div>
+            </a>
         </div>
-        <div>
-            <img src="" alt="Le délice des sens">
+        <div class="mini">
+            <a class="" href="MISC/404.html">
+                <img class="img"
+                src="./img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" 
+                alt="Le délice des sens" 
+                title="Le délice des sens" />
+                <div class="desc txt__left">
+                <h2>Le délice des sens</h2>
+                <p>Folie Méricourt</p>
+                </div>
+            </a>
         </div>
     </section>
     <footer>
-        <header>
-            <p>ohmyfood</p>
-        </header>
-        <span>
-            <p>
-                Proposer un restaurant
-            </p>
-            <p>
-                Devenir partenaire
-            </p>
-            <p>
-                Mentions légales
-            </p>
-            <p>
-                Contact
-            </p>
-        </span>
+        <div class="flex container__center txt__left">
+            <ul>
+                <li>
+                    <h2>ohmyfood</h2>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Proposer un restaurant"
+                    target="_self">
+                    Proposer un restaurant
+                    </a>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Devenir partenaire"
+                    target="_self">
+                    Devenir partenaire
+                    </a>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Mentions légales"
+                    target="_self">
+                    Mentions légales
+                    </a>
+                </li>
+                <li>
+                    <a href="MISC/404.html"
+                    title="Contact"
+                    target="_self">
+                    Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
