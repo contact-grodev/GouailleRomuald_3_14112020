@@ -1,5 +1,11 @@
 @import "libs/mini-reset.scss";
 
+$color-prim: #9356DC;
+$color-sec: #FF79DA;
+$color_ter: #99E2D0;
+$light_gray: #c5c2c2;
+$dark_gray: #808080;
+
 $mini_radius: 1em;
 $top_radius: 0.8em 0.8em 0em 0em;
 
@@ -31,6 +37,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+//* Titres *//
 h1 {
     font-size: 1.5em;
     font-weight: 600;
@@ -43,16 +50,26 @@ h2 {
     padding-bottom: 0.3em;
 }
 
+//* Mise en page *//
 p {
 
 }
 
-ul {
-    border: none;
-    padding: 0;
+.txt {
 
-    li {
-        list-style-type: none;
+    &__center {
+        @extend .txt;
+        text-align: center;
+    }
+
+    &__justify {
+        @extend .txt;
+        text-align: justify;
+    }
+
+    &__left {
+        @extend .txt;
+        text-align: left;
     }
 }
 
@@ -66,17 +83,6 @@ ul {
 
     &__row {
         flex-direction: row;
-    }
-}
-
-.width {
-
-    &__50 {
-    width: 50%;
-    }
-
-    &__100 {
-        width: 100%;
     }
 }
 
@@ -117,22 +123,6 @@ ul {
     }
 }
 
-//* Mise en page du texte *//
-.txt {
-
-    &__center {
-        @extend .txt;
-        text-align: center;
-    }
-
-    &__justify {
-        @extend .txt;
-        text-align: justify;
-    }
-
-    &__left {
-        @extend .txt;
-        text-align: left;
-    }
+#localization {
+    background-color: ;
 }
-
