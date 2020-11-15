@@ -82,7 +82,7 @@ p {
   text-align: left;
 }
 
-.flex {
+.flex, .flex__row, .flex__col {
   display: flex;
 }
 .flex__col {

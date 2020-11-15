@@ -70,10 +70,12 @@ p {
     display: flex;
 
     &__col {
+        @extend .flex;
         flex-direction: column;
     }
 
     &__row {
+        @extend .flex;
         flex-direction: row;
     }
 }
