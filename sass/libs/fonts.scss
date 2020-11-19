@@ -1,0 +1,67 @@
+body {
+    background: #ffffff;
+    height: 100vh;
+}
+
+.font {
+    &__title {
+        font-family: Shrikhand, sans-serif;
+    }
+
+    &__text {
+        font-family: Roboto, sans-serif;
+    }
+}
+
+//* Titres *//
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 0.7em;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 1.1em;
+	font-weight: 500;
+	padding-bottom: 0.5em;
+}
+
+//* Mise en page *//
+p {
+    padding-bottom: 0.5em;
+}
+
+.font_weight {
+    
+	&__400 {
+		font-weight: 400;
+	}
+	
+	&__600 {
+        font-weight: 600;
+    }
+}
+
+.txt {
+
+    &__center {
+        @extend .txt;
+        text-align: center;
+    }
+
+    &__justify {
+        @extend .txt;
+        text-align: justify;
+    }
+
+    &__left {
+        @extend .txt;
+        text-align: left;
+    }
+}

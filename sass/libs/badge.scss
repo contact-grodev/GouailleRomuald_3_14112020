@@ -1,0 +1,51 @@
+//* Badge flottant *//
+.badge {
+	position: absolute;
+	font-size: 0.9em;
+	font-weight: 600;
+
+	&__left {
+		float: left;
+		margin: -1.3em;
+		margin-top: -0.7em;
+		margin-left: -3.5em;
+	}
+	
+	&__top_right {
+		float: right;
+		right: 3.5em;
+		margin-top: 1em;
+	}
+}
+
+.badge_color {
+
+	&__primary {
+		background-color: $color_prim;
+		color: #ffffff;
+	}
+
+
+	&__green {
+		background: $color_ter;
+		color: darken($color: $color_ter, $amount: 40);
+	}
+}
+
+.badge_shape {
+
+	&__round {
+		border-radius: 1.6em;
+		padding: 1em;
+		padding-top: 0.6em;
+		padding-bottom: 0.6em;
+	}
+
+	&__square {
+		border-radius: 0.2em;
+		padding: 0.4em;
+		padding-left: 0.8em;
+		padding-right: 0.8em;
+	}
+}
+

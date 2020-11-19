@@ -1,0 +1,25 @@
+//* Vignettes *//
+.tiles {
+    width: auto;
+	background-color: white;
+	box-shadow: 0em 0em 0.5em grey;
+    border-radius: $mini_radius;
+    margin: 1em;
+
+    .img {
+        border-radius: $top_radius;
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+    }
+
+    .desc {
+        flex-direction: column;
+        border: 0;
+        padding: 0;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+        padding-left: 1em;
+    }
+}
+
