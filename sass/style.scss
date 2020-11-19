@@ -96,7 +96,6 @@ p {
 	background-color: white;
 	box-shadow: 0em 0em 0.5em grey;
 	margin: 1em;
-	padding: 0.3em;
     border-radius: $mini_radius;
     
     .img {
@@ -180,4 +179,13 @@ p {
         width: 1em;
         margin-right: 0.8em;
     }
+}
+
+.badge {
+    background: $color_ter;
+    color: darken($color: $color_ter, $amount: 40);
+    position: absolute;
+    right: 2.5em;
+    margin: 0.5em;
+    padding: 0.2em;
 }
