@@ -6,6 +6,10 @@ body {
 .font {
     &__title {
         font-family: Shrikhand, sans-serif;
+        font-size: 1.6em;
+        font-weight: 400;
+        padding-top: 1em;
+        padding-left: 0.8em;
     }
 
     &__text {
@@ -28,13 +32,15 @@ h2 {
 
 h3 {
 	font-size: 1.1em;
-	font-weight: 500;
-	padding-bottom: 0.5em;
+	font-weight: 400;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    text-transform: uppercase;
 }
 
 //* Mise en page *//
 p {
-    padding-bottom: 0.5em;
+//    padding-bottom: 0.5em;
 }
 
 .font_weight {

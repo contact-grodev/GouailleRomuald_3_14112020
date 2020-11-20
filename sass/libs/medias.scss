@@ -11,4 +11,19 @@
 	position: absolute;
 	right: 1.5em;
 	padding-top: 0.7em;
+
+	&__title {
+		position: relative;
+		top: -1.8em;
+		left: -0.5em;
+	}
+}
+
+.photo {
+
+	&__big {
+		max-height: 16em;
+		width: 100%;
+		object-fit: cover;
+	}
 }
