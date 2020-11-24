@@ -312,6 +312,8 @@ a:visited {
 
 .no_wrap {
   white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .container, .container__center {
