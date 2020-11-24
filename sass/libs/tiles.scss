@@ -14,15 +14,14 @@
 
         p {
             font-size: 0.95em;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 80%;
         }
     }
 
     &__dish {
         @extend .tiles;
         padding: 1em;
+        justify-content: space-between;
+        position: relative;
     }
 
     .img {
@@ -43,8 +42,9 @@
 }
 
 .price {
-    position: relative;
-    float: right;
-    top: -1em;
+    align-self: flex-end;
+    align-items: flex-end;
+    width: 15%;
+
 }
 

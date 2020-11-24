@@ -57,6 +57,13 @@ a {
     }
 }
 
+.no_wrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
 //* Alignement *//
 .container {
     padding: 1em;

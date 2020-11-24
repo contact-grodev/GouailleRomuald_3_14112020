@@ -71,3 +71,8 @@ p {
         text-align: left;
     }
 }
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
