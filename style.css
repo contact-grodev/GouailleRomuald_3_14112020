@@ -50,6 +50,7 @@ td:not([align]), th:not([align]) {
 body {
   background: #ffffff;
   height: 100vh;
+  min-width: 320px;
 }
 
 .font__title {
@@ -170,6 +171,7 @@ h3 {
 
 .logo {
   position: relative;
+  line-height: 0;
 }
 
 .previous {
@@ -240,10 +242,13 @@ h3 {
   padding-left: 1em;
 }
 
+.meal {
+  width: 80%;
+}
+
 .price {
   align-self: flex-end;
   align-items: flex-end;
-  width: 15%;
 }
 
 .badge {
@@ -274,9 +279,7 @@ h3 {
 
 .badge_shape__round {
   border-radius: 1.6em;
-  padding: 1em;
-  padding-top: 0.6em;
-  padding-bottom: 0.6em;
+  padding: 0.6em 1em;
 }
 .badge_shape__square {
   border-radius: 0.2em;
