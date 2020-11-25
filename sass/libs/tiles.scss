@@ -55,25 +55,23 @@
 
 .meal {
     width: 85%;
+    padding: 0.5em 1em;
 
     h2 {
-        padding-top: 0.5em;
-        padding-left: 0.8em;
     }
 
     p {
-        padding-top: 0.5em;
-        padding-left: 1em;
-        padding-bottom: 0.5;
     }
 }
 
 .price {
     align-self: flex-end;
+    padding: 0.5em 1em;
 }
 
 .check {
     transition: 0.5s;
+    height: 100%;
     align-self: center;
     justify-content: center;
     background-color: $color_ter;
