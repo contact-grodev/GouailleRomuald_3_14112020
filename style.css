@@ -184,18 +184,14 @@ h3 {
   padding: 1.5em;
 }
 
-.heart {
-  position: absolute;
-  right: 1.5em;
-  padding-top: 0.7em;
-}
 .heart__title {
   align-self: center;
   padding-right: 1em;
 }
-
-.fa-heart:hover {
-  color: blue;
+.heart__rest_tile {
+  position: absolute;
+  right: 1.5em;
+  padding-top: 0.7em;
 }
 
 .photo__big {
