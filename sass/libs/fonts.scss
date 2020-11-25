@@ -15,6 +15,10 @@ body {
 
     &__text {
         font-family: Roboto, sans-serif;
+        
+        p {
+            padding-bottom: 1em;
+        }
     }
 }
 
@@ -28,7 +32,6 @@ h1 {
 h2 {
     font-size: 1.2em;
     font-weight: 500;
-    padding-bottom: 0.5em;
 }
 
 h3 {
@@ -39,11 +42,6 @@ h3 {
     text-transform: uppercase;
 }
 
-//* Mise en page *//
-p {
-//    padding-bottom: 0.5em;
-}
-
 .font_weight {
     
 	&__400 {
@@ -52,6 +50,10 @@ p {
 	
 	&__600 {
         font-weight: 600;
+    }
+
+    &__900 {
+        font-weight: 900;
     }
 }
 

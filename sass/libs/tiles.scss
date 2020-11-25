@@ -19,9 +19,20 @@
 
     &__dish {
         @extend .tiles;
-        padding: 1em;
+        padding: 0.5em 1em;
         justify-content: space-between;
+        overflow: hidden;
         position: relative;
+
+        &:hover .check {
+            transition: 0.5s;
+            right: 0;
+        }
+
+        &:hover .check__ico {
+            transition: 1s;
+            transform: rotate(180deg);
+        }
     }
 
     .img {
@@ -42,12 +53,30 @@
 }
 
 .meal {
-    width: 80%;
+    width: 85%;
+
+    h2 {
+        padding-bottom: 0.5em;
+    }
+
+    p {
+        padding-bottom: 0;
+    }
 }
 
 .price {
     align-self: flex-end;
-    align-items: flex-end;
-
 }
 
+.check {
+    position: absolute;
+    right: -100px;
+    transition: 0.5s;
+    padding-right: 1.2em;
+    padding-left: 1.2em;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+    background-color: $color_ter;
+    color: white;
+}

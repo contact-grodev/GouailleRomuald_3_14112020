@@ -46,6 +46,17 @@ a {
     }
 }
 
+.space {
+
+    &__between {
+        justify-content: space-between;
+    }
+
+    &__around {
+        justify-content: space-around;
+    }
+}
+
 .no_flex {
 
     &__block {

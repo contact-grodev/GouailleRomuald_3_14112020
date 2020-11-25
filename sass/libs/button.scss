@@ -6,4 +6,14 @@
 	padding: 1em;
 	padding-left: 1.5em;
 	padding-right: 1.5em;
+
+	&__order {
+		@extend .button;
+		margin-top: 3em;
+		margin-bottom: 4em;
+		font-size: 1.2em;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 }
+

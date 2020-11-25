@@ -63,6 +63,9 @@ body {
 .font__text {
   font-family: Roboto, sans-serif;
 }
+.font__text p {
+  padding-bottom: 1em;
+}
 
 h1 {
   font-size: 1.5em;
@@ -73,7 +76,6 @@ h1 {
 h2 {
   font-size: 1.2em;
   font-weight: 500;
-  padding-bottom: 0.5em;
 }
 
 h3 {
@@ -89,6 +91,9 @@ h3 {
 }
 .font_weight__600 {
   font-weight: 600;
+}
+.font_weight__900 {
+  font-weight: 900;
 }
 
 .txt__center {
@@ -185,9 +190,8 @@ h3 {
   padding-top: 0.7em;
 }
 .heart__title {
-  position: relative;
-  top: -1.8em;
-  left: -0.5em;
+  align-self: center;
+  padding-right: 1em;
 }
 
 .photo__big {
@@ -196,7 +200,7 @@ h3 {
   object-fit: cover;
 }
 
-.button {
+.button, .button__order {
   background: linear-gradient(#FF79DA, #9356DC);
   color: #ffffff;
   border-radius: 1.5em;
@@ -204,6 +208,13 @@ h3 {
   padding: 1em;
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+.button__order {
+  margin-top: 3em;
+  margin-bottom: 4em;
+  font-size: 1.2em;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .tiles, .tiles__dish {
@@ -223,9 +234,18 @@ h3 {
   font-size: 0.95em;
 }
 .tiles__dish {
-  padding: 1em;
+  padding: 0.5em 1em;
   justify-content: space-between;
+  overflow: hidden;
   position: relative;
+}
+.tiles__dish:hover .check {
+  transition: 0.5s;
+  right: 0;
+}
+.tiles__dish:hover .check__ico {
+  transition: 1s;
+  transform: rotate(180deg);
 }
 .tiles .img, .tiles__dish .img {
   border-radius: 0.8em 0.8em 0em 0em;
@@ -243,12 +263,30 @@ h3 {
 }
 
 .meal {
-  width: 80%;
+  width: 85%;
+}
+.meal h2 {
+  padding-bottom: 0.5em;
+}
+.meal p {
+  padding-bottom: 0;
 }
 
 .price {
   align-self: flex-end;
-  align-items: flex-end;
+}
+
+.check {
+  position: absolute;
+  right: -100px;
+  transition: 0.5s;
+  padding-right: 1.2em;
+  padding-left: 1.2em;
+  height: 100%;
+  align-self: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  color: white;
 }
 
 .badge {
@@ -304,6 +342,13 @@ a:visited {
 }
 .flex__row {
   flex-direction: row;
+}
+
+.space__between {
+  justify-content: space-between;
+}
+.space__around {
+  justify-content: space-around;
 }
 
 .no_flex__block {
