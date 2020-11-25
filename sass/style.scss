@@ -74,6 +74,19 @@ a {
     overflow: hidden;
 }
 
+.overflow {
+
+    &__hidden {
+        overflow: hidden;
+    }
+}
+
+.object_fit {
+
+    &__cover {
+        object-fit: cover;
+    }
+}
 
 //* Alignement *//
 .container {

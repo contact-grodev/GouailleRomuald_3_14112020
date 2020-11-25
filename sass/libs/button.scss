@@ -15,5 +15,9 @@
 		padding-left: 2em;
 		padding-right: 2em;
 	}
+
+	&:hover {
+		background: linear-gradient(to top, $color_sec, 20%, $color_prim);
+	}
 }
 

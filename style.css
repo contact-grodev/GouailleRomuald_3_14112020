@@ -86,6 +86,10 @@ h3 {
   text-transform: uppercase;
 }
 
+.font_size__steps {
+  font-size: 0.9em;
+}
+
 .font_weight__400 {
   font-weight: 400;
 }
@@ -106,9 +110,12 @@ h3 {
   text-align: left;
 }
 
-.ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
+.desc {
+  padding: 0.5em 0.5em;
+}
+.desc h2 {
+  padding-top: 0.2em;
+  padding-bottom: 0.3em;
 }
 
 #how_to {
@@ -186,18 +193,29 @@ h3 {
 
 .heart__title {
   align-self: center;
-  padding-right: 1em;
+  margin-right: 1em;
 }
 .heart__rest_tile {
-  position: absolute;
-  right: 1.5em;
-  padding-top: 0.7em;
+  align-self: flex-start;
+  margin: 1.5em;
+  margin-top: 1em;
+  color: #bebebe;
+}
+.heart__hide:hover {
+  display: none;
+}
+
+.change_icon > .far + .fas,
+.change_icon:hover > .far {
+  display: none;
+}
+
+.change-icon:hover > .fas + .far {
+  display: inherit;
 }
 
 .photo__big {
   max-height: 16em;
-  width: 100%;
-  object-fit: cover;
 }
 
 .button, .button__order {
@@ -215,6 +233,9 @@ h3 {
   font-size: 1.2em;
   padding-left: 2em;
   padding-right: 2em;
+}
+.button:hover, .button__order:hover {
+  background: linear-gradient(to top, #FF79DA, 20%, #9356DC);
 }
 
 .width__100 {
@@ -238,9 +259,6 @@ h3 {
 .tiles__big p {
   font-size: 0.95em;
 }
-.tiles__dish {
-  overflow: hidden;
-}
 .tiles__dish:hover .check {
   display: inline-block;
   transition: 0.5s;
@@ -259,13 +277,10 @@ h3 {
 }
 .tiles .img, .tiles__dish .img {
   border-radius: 0.8em 0.8em 0em 0em;
-  width: 100%;
   height: 15em;
-  object-fit: cover;
 }
 
 .meal {
-  overflow: hidden;
   padding: 0.5em 1em;
 }
 .meal h2 {
@@ -369,6 +384,14 @@ a:visited {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.overflow__hidden {
+  overflow: hidden;
+}
+
+.object_fit__cover {
+  object-fit: cover;
 }
 
 .container, .container__center {

@@ -12,22 +12,32 @@
 
 	&__title {
 		align-self: center;
-		padding-right: 1em;
+		margin-right: 1em;
 	}
 
 	&__rest_tile {
-		position: absolute;
-		right: 1.5em;
-		padding-top: 0.7em;
-
+		align-self: flex-start;
+		margin: 1.5em;
+		margin-top: 1em;
+		color: $dark_gray;
 	}
+
+	&__hide:hover {
+		display: none;
+	}
+}
+
+.change_icon > .far + .fas,
+.change_icon:hover > .far {
+  display: none;
+}
+.change-icon:hover > .fas + .far {
+  display: inherit;
 }
 
 .photo {
 
 	&__big {
 		max-height: 16em;
-		width: 100%;
-		object-fit: cover;
 	}
 }
