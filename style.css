@@ -241,6 +241,7 @@ h3 {
 .tiles__dish:hover .check {
   transition: 0.5s;
   width: 5em;
+  display: inline-block;
 }
 .tiles__dish:hover .check__ico {
   transform: rotate(180deg);
@@ -262,7 +263,7 @@ h3 {
 }
 
 .meal {
-  width: 85%;
+  max-width: 85%;
   padding: 0.5em 1em;
 }
 .meal h2 {
@@ -274,7 +275,7 @@ h3 {
 
 .price {
   align-self: flex-end;
-  padding: 0.5em 1em;
+  padding: 0.5em;
 }
 
 .check {
@@ -285,6 +286,7 @@ h3 {
   width: 0;
   overflow: hidden;
   transform-origin: center;
+  display: none;
 }
 
 .check__ico {
