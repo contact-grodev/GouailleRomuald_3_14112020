@@ -1,0 +1,17 @@
+@keyframes rotate_in {
+	from: {
+		-webkit-transform: rotate(0deg);
+	}
+	to: {
+		-webkit-transform: rotate(180deg);
+	}
+}
+
+@keyframes rotate_out {
+	from: {
+		transform: rotate(180deg);
+	}
+	to: {
+		transform: rotate(0deg);
+	}
+}
