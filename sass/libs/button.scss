@@ -17,7 +17,7 @@
 	}
 
 	&:hover {
-		background: linear-gradient(to top, $color_sec, 20%, $color_prim);
+		background: linear-gradient(to top, $color_prim, 20%, $color_sec);
 	}
 }
 

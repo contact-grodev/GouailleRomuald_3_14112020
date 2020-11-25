@@ -3,6 +3,13 @@
 	line-height: 0;
 }
 
+.photo {
+
+	&__big {
+		max-height: 16em;
+	}
+}
+
 .previous {
 	position: absolute;
 	padding: 1.5em;
@@ -12,7 +19,7 @@
 
 	&__title {
 		align-self: center;
-		margin-right: 1em;
+		margin-right: 1.5em;
 	}
 
 	&__rest_tile {
@@ -21,23 +28,26 @@
 		margin-top: 1em;
 		color: $dark_gray;
 	}
-
-	&__hide:hover {
-		display: none;
-	}
 }
 
-.change_icon > .far + .fas,
-.change_icon:hover > .fas {
+.change_icon > .fas {
   display: none;
 }
-.change-icon:hover > .far + .fas {
-  display: inherit;
+
+.change_icon:hover > .far {
+	display: none;
 }
 
-.photo {
+.change_icon:hover > .fas {
+	display: inline;
+	background: linear-gradient($color_prim, $color_sec); 
+	color:transparent;
+	background-clip: text;
+}
 
-	&__big {
-		max-height: 16em;
-	}
+.separator {
+	height: 3px;
+	width: 3em;
+	background-color: $color_ter;
+	margin-left: 1em;
 }
