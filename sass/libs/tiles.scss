@@ -37,6 +37,11 @@
         &:hover .meal {
             transition: 0.5s;
         }
+
+        &:hover .width__100 {
+            transition: 0.5s;
+            width: calc(100% - 4.5em);
+        }
     }
 
     .img {

@@ -248,6 +248,10 @@ h3 {
 .tiles__dish:hover .meal {
   transition: 0.5s;
 }
+.tiles__dish:hover .width__100 {
+  transition: 0.5s;
+  width: calc(100% - 4.5em);
+}
 .tiles .img, .tiles__dish .img {
   border-radius: 0.8em 0.8em 0em 0em;
   width: 100%;
