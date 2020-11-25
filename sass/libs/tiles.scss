@@ -4,21 +4,7 @@
 
     &__dish {
 
-        &:hover .check {
-            display: inline-block;
-            transition: 0.5s;
-            width: 4.5em;
-            flex-shrink: 0;
-        }
 
-        &:hover .check__ico {
-            transform: rotate(180deg);
-            transition: 1s;
-        }
-
-        &:hover .meal {
-            transition: 0.5s;
-        }
     }
 }
 //* Vignettes *//
@@ -44,13 +30,20 @@
         @extend .tiles;
         overflow: hidden;
 
+        &:hover .check {
+            display: inline-block;
+            transition: 0.5s;
+            width: 4.5em;
+            flex-shrink: 0;
+        }
+
         &:hover .check__ico {
             transform: rotate(180deg);
             transition: 1s;
-            display: inline-block;
         }
 
         &:hover .meal {
+            transition: 0.5s;
         }
     }
 
