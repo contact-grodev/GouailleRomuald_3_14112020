@@ -1,5 +1,14 @@
 // @import "../libs/keyframe.scss";
 
+
+.width {
+
+    &__100 {
+        width: 100%;
+        transition: 0.5s;
+    }
+}
+
 //* Vignettes *//
 .tiles {
     width: auto;

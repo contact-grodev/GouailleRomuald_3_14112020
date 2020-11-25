@@ -217,6 +217,11 @@ h3 {
   padding-right: 2em;
 }
 
+.width__100 {
+  width: 100%;
+  transition: 0.5s;
+}
+
 .tiles, .tiles__dish {
   width: auto;
   background-color: white;
@@ -351,10 +356,6 @@ a:visited {
 }
 .space__around {
   justify-content: space-around;
-}
-
-.width__100 {
-  width: 100%;
 }
 
 .no_flex__block {
