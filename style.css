@@ -248,7 +248,7 @@ h3 {
   transition: 1s;
 }
 .tiles__dish:hover .meal {
-  width: 18.5em;
+  width: 25.5em;
 }
 .tiles .img, .tiles__dish .img {
   border-radius: 0.8em 0.8em 0em 0em;
@@ -266,7 +266,6 @@ h3 {
 }
 
 .meal {
-  width: 33em;
   overflow: hidden;
   padding: 0.5em 1em;
 }
@@ -378,6 +377,9 @@ a:visited {
 .container__center {
   align-items: center;
   justify-content: center;
+}
+.container__dish {
+  justify-content: space-around;
 }
 
 .float__right {
