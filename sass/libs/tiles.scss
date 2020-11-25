@@ -1,5 +1,26 @@
 // @import "../libs/keyframe.scss";
 
+
+.container {
+
+    &__dish {
+
+        &:hover .check {
+            display: inline-block;
+            transition: 0.5s;
+            width: 5.5em;
+        }
+
+        &:hover .check__ico {
+            transform: rotate(180deg);
+            transition: 1s;
+        }
+
+        &:hover .meal {
+            transition: 0.5s;
+        }
+    }
+}
 //* Vignettes *//
 .tiles {
     width: auto;
@@ -23,21 +44,14 @@
         @extend .tiles;
         justify-content: space-between;
         overflow: hidden;
-        position: relative;
-
-        &:hover .check {
-            transition: 0.5s;
-            width: 5.5em;
-            display: inline-block;
-        }
 
         &:hover .check__ico {
             transform: rotate(180deg);
             transition: 1s;
+            display: inline-block;
         }
 
         &:hover .meal {
-            width: 25.5em;
         }
     }
 
@@ -48,14 +62,6 @@
         object-fit: cover;
     }
 
-    .desc {
-        flex-direction: column;
-        border: 0;
-        padding: 0;
-        padding-top: 1em;
-        padding-bottom: 0.5em;
-        padding-left: 1em;
-    }
 }
 
 .meal {
@@ -84,6 +90,7 @@
     width: 0;
     overflow: hidden;
     transform-origin: center;
+    display: none;
 }
 
 
