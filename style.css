@@ -240,7 +240,6 @@ h3 {
   display: inline-block;
   transition: 0.5s;
   width: 4.5em;
-  flex-shrink: 0;
 }
 .tiles__dish:hover .check__ico {
   transform: rotate(180deg);
@@ -280,6 +279,7 @@ h3 {
   width: 0;
   overflow: hidden;
   transform-origin: center;
+  flex-shrink: 0;
 }
 
 .check__ico {

@@ -27,7 +27,6 @@
             display: inline-block;
             transition: 0.5s;
             width: 4.5em;
-            flex-shrink: 0;
         }
 
         &:hover .check__ico {
@@ -75,6 +74,7 @@
     width: 0;
     overflow: hidden;
     transform-origin: center;
+    flex-shrink: 0;
 }
 
 
