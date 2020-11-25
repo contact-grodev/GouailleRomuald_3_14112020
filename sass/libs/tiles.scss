@@ -27,7 +27,7 @@
 
         &:hover .check {
             transition: 0.5s;
-            right: 0;
+            width: 5em;
         }
 
         &:hover .check__ico {
@@ -58,9 +58,11 @@
     padding: 0.5em 1em;
 
     h2 {
+        padding-bottom: 0.5em;
     }
 
     p {
+        padding-bottom: 0;
     }
 }
 
@@ -71,16 +73,16 @@
 
 .check {
     transition: 0.5s;
-    height: 100%;
-    align-self: center;
-    justify-content: center;
     background-color: $color_ter;
     color: white;
     transform: rotate(-180deg);
+    width: 0;
+    overflow: hidden;
+    transform-origin: center;
 }
 
 
 .check__ico {
     transition: 1s;
-    margin: 1.2em;
+    margin: 1.18em;
 }
