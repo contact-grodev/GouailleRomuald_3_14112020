@@ -42,7 +42,6 @@
 
     &__dish {
         @extend .tiles;
-        justify-content: space-between;
         overflow: hidden;
 
         &:hover .check__ico {
