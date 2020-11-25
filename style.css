@@ -206,11 +206,11 @@ h3 {
 }
 
 .change_icon > .far + .fas,
-.change_icon:hover > .far {
+.change_icon:hover > .fas {
   display: none;
 }
 
-.change-icon:hover > .fas + .far {
+.change-icon:hover > .far + .fas {
   display: inherit;
 }
 
