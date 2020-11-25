@@ -247,6 +247,9 @@ h3 {
   transform: rotate(180deg);
   transition: 1s;
 }
+.tiles__dish:hover .meal {
+  width: 18.5em;
+}
 .tiles .img, .tiles__dish .img {
   border-radius: 0.8em 0.8em 0em 0em;
   width: 100%;
@@ -263,7 +266,8 @@ h3 {
 }
 
 .meal {
-  width: 95%;
+  width: 33em;
+  overflow: hidden;
   padding: 0.5em 1em;
 }
 .meal h2 {
