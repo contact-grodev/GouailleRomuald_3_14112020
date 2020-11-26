@@ -4,8 +4,6 @@
 	border-radius: 1.5em;
 	border: none;
 	padding: 1em;
-	padding-left: 1.5em;
-	padding-right: 1.5em;
 
 	&__order {
 		@extend .button;
@@ -14,6 +12,14 @@
 		font-size: 1.2em;
 		padding-left: 2em;
 		padding-right: 2em;
+	}
+
+	&__explore {
+		@extend .button;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+		margin-top: 1.5em;
+		margin-bottom: 3em;
 	}
 
 	&:hover {

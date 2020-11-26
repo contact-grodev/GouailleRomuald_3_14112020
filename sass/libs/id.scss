@@ -29,6 +29,10 @@
     background-color: lighten($color: $color_prim, $amount: 35);
 }
 
+#shop_ico {
+    color: $color_prim;
+}
+
 //* Champ de recherche *//
 #localization {
     background-color: $dark_gray;
