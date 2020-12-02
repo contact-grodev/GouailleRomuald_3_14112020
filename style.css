@@ -372,17 +372,27 @@ h3 {
   padding-right: 0.8em;
 }
 
-#test {
+.fade_in li {
   animation: fadein 2s;
-  -moz-animation: fadein 2s;
-  /* Firefox */
-  -webkit-animation: fadein 2s;
-  /* Safari and Chrome */
+  animation-fill-mode: both;
+}
+.fade_in li:nth-child(1) {
+  animation-delay: 300ms;
+}
+.fade_in li:nth-child(2) {
+  animation-delay: 600ms;
+}
+.fade_in li:nth-child(3) {
+  animation-delay: 900ms;
+}
+.fade_in li:nth-child(4) {
+  animation-delay: 1200ms;
 }
 
 @keyframes fadein {
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -392,6 +402,7 @@ h3 {
   /* Firefox */
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -401,6 +412,7 @@ h3 {
   /* Safari and Chrome */
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
