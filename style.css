@@ -240,6 +240,7 @@ h3 {
   border-radius: 1.5em;
   border: none;
   padding: 1em;
+  outline: none;
 }
 .button__order {
   margin-top: 3em;
