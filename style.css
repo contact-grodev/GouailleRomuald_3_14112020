@@ -481,4 +481,8 @@ a:visited {
   float: left;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */
