@@ -373,27 +373,69 @@ h3 {
   padding-right: 0.8em;
 }
 
+.fade_in {
+  animation: fade_in 1s;
+  animation-fill-mode: both;
+}
 .fade_in li {
-  animation: fadein 2s;
+  animation: fadein_up 1s;
   animation-fill-mode: both;
 }
 .fade_in li:nth-child(1) {
-  animation-delay: 300ms;
+  animation-delay: 500ms;
 }
 .fade_in li:nth-child(2) {
-  animation-delay: 600ms;
+  animation-delay: 1000ms;
 }
 .fade_in li:nth-child(3) {
-  animation-delay: 900ms;
+  animation-delay: 1500ms;
 }
 .fade_in li:nth-child(4) {
-  animation-delay: 1200ms;
+  animation-delay: 2000ms;
 }
 
+.fade_out {
+  animation: fadeout 3s;
+  animation-timing-function: cubic-bezier(1,.08,.76,.49);
+  animation-fill-mode: both;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(255, 255, 255);
+}
+
+.overlay__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.overlay__spinner {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #FF79DA;
+  border-top-color: #9356DC;
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes fadein {
   from {
     opacity: 0;
-    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -403,7 +445,6 @@ h3 {
   /* Firefox */
   from {
     opacity: 0;
-    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -413,10 +454,67 @@ h3 {
   /* Safari and Chrome */
   from {
     opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadein_up {
+  from {
+    opacity: 0;
     transform: translateY(20px);
   }
   to {
     opacity: 1;
+  }
+}
+@-moz-keyframes fadein_up {
+  /* Firefox */
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein_up {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-moz-keyframes fadeout {
+  /* Firefox */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes fadeout {
+  /* Safari and Chrome */
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 a:link {
